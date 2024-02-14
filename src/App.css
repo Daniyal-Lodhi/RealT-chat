@@ -1,0 +1,41 @@
+.transition{
+    transition: all 0.4s ease !important;
+}
+/* Add this to your CSS file or style block */
+ @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
+  
+  .gradient-bg {
+    animation: gradientAnimation 1s infinite linear alternate; /* Adjust the duration and timing function here */
+    background: linear-gradient(45deg, #1702fb, #0099ff, #2a005b);
+    background-size: 200% 200%;
+    transition: all 0.1s ease-in-out;
+    color: white !important;
+  }
+ /* For Webkit Browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 4px; /* Set a very thin width for the scrollbar */
+  height: 6px; /* Set a shorter height for the scrollbar */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Set the background color of the scrollbar track */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; /* Set the color of the scrollbar handle */
+  border-radius: 6px; /* Set the radius of the scrollbar handle */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Set the color of the scrollbar handle on hover */
+}
