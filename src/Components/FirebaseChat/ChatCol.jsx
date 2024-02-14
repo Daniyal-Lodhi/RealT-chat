@@ -71,12 +71,12 @@ const ChatCol = () => {
             </div>
             <div className=' bg-slate-200 h-full'>
             <div className=' flex flex-col h-[84vh] pt-2 pl-3 relative w-full '>
-                <div className={`${firebase.loading ? "" : "hidden"} py-32 flex flex-col items-center space-y-3 mx-auto   `}>
+                <div className={`${firebase.loading ? "" : "hidden"} bg-red-800 py-32 flex flex-col items-center space-y-3 mx-auto   `}>
                     <CircleLoader color="blue" />
                     <p className='text-slate-600'>Loading chats</p>
                 </div>
                 <p className={`${firebase.noChats?"":"hidden"} bg-green-400 px-5 py-2 rounded-md w-max`}>There are no chats with {receiver?.displayName || receiver?.email}. Start chatting now :)</p>
-                <div className='h-auto overflow-y-scroll overflow-x-hidden flex flex-col space-y-3 px-2'  
+                <div className='h-[100%] overflow-y-scroll overflow-x-hidden flex flex-col space-y-3 px-2'  
                 ref={chatContainerRef} >
                     {firebase.user && firebase.ChatArr && firebase.ChatArr.map((msg) => {
                         return <div key={msg.time} className={`bg-indigo-200 py-1 px-3 w-auto max-w-96  ${msg?.uid != firebase.user?.uid ? "mr-auto rounded-t-lg rounded-r-lg" : "ml-auto rounded-l-lg rounded-t-lg"} `}>{msg.message}</div>
