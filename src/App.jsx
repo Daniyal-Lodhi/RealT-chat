@@ -17,7 +17,7 @@ function App() {
         <FirebaseProvider>
           <Navbar />
           <div className="flex sm:space-x-0 sm:flex-row flex-col h-screen ">
-            <div className=' sm:w-[28%] w-full bg-slate-900 h-full py-12'>
+            <div className=' sm:w-[28%] w-full bg-slate-900 h-full pt-12 pb-2'>
               <section>
                 <div className="flex flex-col mt-5">
                   <div className='text-xl px-5 py-3 text-white rounded-md text-center w-[50%] mx-auto bg-gradient-to-tr from-indigo-600 to-green-600 '>Applications</div>
