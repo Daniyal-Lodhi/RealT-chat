@@ -23,7 +23,7 @@ function App() {
                   <div className='md:text-xl  px-5 py-3 text-white rounded-md text-center  w-max mx-auto bg-gradient-to-tr from-indigo-600 to-green-600 text-base'>Applications</div>
                   <div className="flex flex-col my-5 justify-center items-center space-y-6">
                     <Link to={"/firebasechat"} className='px-5 py-3 bg-white hover:text-blue-600 rounded-md w-[70%] text-center'>Firebase realtime chat </Link>
-                    <Link to={'/chatbot'} className='px-5 py-3 bg-white hover:text-blue-600 rounded-md w-[70%] text-center'>Chat bot</Link>
+                    <Link to={'/chatbot'} className='hidden px-5 py-3 bg-white hover:text-blue-600 rounded-md w-[70%] text-center'>Chat bot</Link>
                   </div>
                 </div>
               </section>
