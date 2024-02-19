@@ -5,7 +5,7 @@ import { useFirebase } from '../../context/FirebaseProvider';
 import {CircleLoader} from "react-spinners"
 
 const FirebaseChat = () => {
-  const baseUrl = "http://localhost:3000";
+  const baseUrl = "https://inotebook-backend-rho.vercel.app/api/firebase";
   const firebase = useFirebase();
   const [users, setUsers] = useState(null)
   const [unreadMsgs, setUnreadMsgs] = useState(0);

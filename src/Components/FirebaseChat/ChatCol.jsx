@@ -8,7 +8,7 @@ import ChatItem from '../ChatItem';
 
 
 const ChatCol = () => {
-    const baseUrl = "http://localhost:3000/";
+    const baseUrl = "https://inotebook-backend-rho.vercel.app/api/firebase/";
     const [msg, setMsg] = useState("");
     const [receiver, setReceiver] = useState(null)
     const param = useParams();
