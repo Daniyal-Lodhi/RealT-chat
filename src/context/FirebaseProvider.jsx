@@ -87,7 +87,7 @@ const FirebaseProvider = (props) => {
         read: false,
         time: Date.now(), // You can use ServerValue.TIMESTAMP to set the timestamp
       });
-      console.log("success")
+      // console.log("success")
     } catch (error) {
       console.log(error)
     }
@@ -139,7 +139,7 @@ const FirebaseProvider = (props) => {
         let valuesArray = Object.entries(snapshot.val()).map(([id, data]) => ({ id, ...data }));
         // making the array of just values of object (no keys)
         valuesArray = valuesArray.map((obj) => Object.values(obj))
-        console.log(valuesArray)
+        // console.log(valuesArray)
         let tempUnreadChatArr = [];
         valuesArray.forEach((item) => {
           let unreadChatCounter = 0;

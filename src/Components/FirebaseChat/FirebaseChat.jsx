@@ -70,7 +70,6 @@ const FirebaseChat = () => {
   return (
     <div className='sm:ml-3 ml-1 mt-2'>  
       <h1 className='text-2xl font-bold'>Registered users </h1>
-      <button onClick={()=>console.log(firebase.unreadChats)} >print</button>
       <h1 className='text-xl text-slate-700 font-bold mt-2'>Chat with:</h1>
       <div className='flex flex-col space-y-3 py-5   '>
         <div className={`${!users?"block":"hidden"} py-10 mx-auto ml-[45%]  `}>
