@@ -2,7 +2,12 @@ import React, { useEffect } from 'react'
 import { useFirebase } from '../context/FirebaseProvider.jsx'
 
 const Home = () => {
-
+ const firebase = useFirebase() ;
+ useEffect(()=>{
+  if(true){
+  // firebase.updateDeliverStatus() ;
+  }
+ },[])
   return (
     <div className='my-32 mx-auto text-center'>
       <div className={`${localStorage.getItem("loggedIn")=='true'?"block":"hidden"}`}>

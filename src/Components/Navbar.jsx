@@ -4,7 +4,7 @@ import { useFirebase } from '../context/FirebaseProvider'
 const Navbar = () => {
     const firebase = useFirebase();
     useEffect(() => {
-        console.log(firebase.user)
+        // console.log(firebase.user)
     }, [])
 
     return (
