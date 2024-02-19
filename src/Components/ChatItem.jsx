@@ -24,7 +24,7 @@ const ChatItem = (props) => {
         <p>{msg.message}</p>
         <div className='ml-auto flex items-center'>
           <p className='text-[10px] text-slate-500 ml-auto'>{formatTime(msg.time)}</p>
-          <BiCheckDouble className={`${msg.delivered && msg.read ? '' : "hidden"} text-blue-700 `} />
+          <BiCheckDouble className={`${msg.delivered && msg.read && msg.uid == firebase.user?.uid ? '' : "hidden"} text-blue-700 `} />
           <BiCheckDouble className={`${msg.delivered && !msg.read ? '' : "hidden"}`} />
           <BiCheck className={`${!msg.delivered && !msg.read ? '' : "hidden"} ${msg.uid != firebase.user.uid ? 'hidden' : ''}`} />
         </div>
